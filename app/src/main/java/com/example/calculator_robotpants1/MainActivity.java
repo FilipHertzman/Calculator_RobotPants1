@@ -154,8 +154,8 @@ public class MainActivity extends AppCompatActivity {
                 double N1 = Double.parseDouble((Input1.getText().toString()));
                 double N2 = Double.parseDouble((Input2.getText().toString()));
 
-                double sum = N1 * N2;
-                double sum2 = sum / 100;
+                double sum = N1 / N2;
+                double sum2 = sum * 100;
                 DecimalFormat df = new DecimalFormat("#.##");
                 double sum_Sv = Double.parseDouble((df.format(sum2)));
                 Result.setText(String.valueOf(sum_Sv));
