@@ -46,6 +46,35 @@ public class MainActivity extends AppCompatActivity {
             Result.setText(String.valueOf(sum_Sv));
         });
 
+        //Lovisa subtraktion
+
+        Button Btn_subtraktion = findViewById(R.id.button_subtraktion);
+        Btn_subtraktion.setOnClickListener(view -> {
+
+            double N1 = Double.parseDouble((Input1.getText().toString()));
+            double N2 = Double.parseDouble((Input2.getText().toString()));
+
+            double sum = N1 - N2;
+            DecimalFormat df = new DecimalFormat("#.#");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
+            Result.setText(String.valueOf(sum_Sv));
+
+        });
+
+        //Lovisa division
+        Button Btn_division = findViewById(R.id.button_division);
+        Btn_division.setOnClickListener(view -> {
+
+            double N1 = Double.parseDouble((Input1.getText().toString()));
+            double N2 = Double.parseDouble((Input2.getText().toString()));
+
+            double sum = N1 / N2;
+            DecimalFormat df = new DecimalFormat("#.#");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
+            Result.setText(String.valueOf(sum_Sv));
+
+        });
+
         Button Btn_multiplication = findViewById(R.id.button_multiplikation);
         Btn_multiplication.setOnClickListener(view -> {
 
