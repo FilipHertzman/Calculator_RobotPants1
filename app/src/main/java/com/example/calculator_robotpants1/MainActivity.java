@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             Result.setText(String.valueOf(sum_Sv));
         });
 
-        //Lovisa subtraktion !
+        //Lovisa subtraktion
 
         Button Btn_subtraktion = findViewById(R.id.button_subtraktion);
         Btn_subtraktion.setOnClickListener(view -> {
