@@ -7,7 +7,7 @@
     android:background="@drawable/photo_1516541196182_6bdb0516ed27"
     tools:context=".MainActivity">
 
-    <!-- Layout - Filip Hertzman -->
+    <!-- Layout - Filip Hertzman, Rafat -->
 
     <TextView
         android:id="@+id/textView"
@@ -16,7 +16,7 @@
         android:layout_marginBottom="24dp"
         android:text="@string/calculator"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="@dimen/header_calculator"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Input1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_cirkelns_area" />
+        app:layout_constraintTop_toBottomOf="@+id/button_area_of_the_circle" />
 
     <!-- Input -->
     <EditText
@@ -63,54 +63,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Input1" />
 
-    <!-- Knappar -->
+    <!-- Buttons -->
     <Button
-        android:id="@+id/button_roten_ur"
+        android:id="@+id/button_square_root_of"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/roten_ur"
-        android:textSize="@dimen/Knappar"
+        android:text="@string/square_root_of"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_subtraktion" />
+        app:layout_constraintTop_toBottomOf="@+id/button_subtraction" />
 
     <Button
-        android:id="@+id/button_pythagoras_sats"
+        android:id="@+id/button_pythagorean_theorem"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/pythagoras_sats"
-        android:textSize="@dimen/Knappar"
-        app:layout_constraintEnd_toStartOf="@+id/button_cirkelns_area"
+        android:text="@string/pythagorean_theorem"
+        android:textSize="@dimen/button"
+        app:layout_constraintEnd_toStartOf="@+id/button_area_of_the_circle"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_multiplikation" />
+        app:layout_constraintTop_toBottomOf="@+id/button_multiplication" />
 
     <Button
-        android:id="@+id/button_procent"
+        android:id="@+id/button_percent"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/procent"
-        android:textSize="@dimen/Knappar"
+        android:text="@string/percent"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/button_roten_ur"
+        app:layout_constraintStart_toEndOf="@+id/button_square_root_of"
         app:layout_constraintTop_toBottomOf="@+id/button_division" />
 
     <Button
-        android:id="@+id/button_subtraktion"
+        android:id="@+id/button_subtraction"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="@string/subtraktion"
-        android:textSize="@dimen/Knappar"
+        android:text="@string/subtraction"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,40 +118,40 @@
 
 
     <Button
-        android:id="@+id/button_cylinderns_volym"
+        android:id="@+id/button_volume_of_the_cylinder"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/cylinderns_volym"
-        android:textSize="@dimen/Knappar"
+        android:text="@string/volume_of_the_cylinder"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/button_cirkelns_area"
-        app:layout_constraintTop_toBottomOf="@+id/button_procent" />
+        app:layout_constraintStart_toEndOf="@+id/button_area_of_the_circle"
+        app:layout_constraintTop_toBottomOf="@+id/button_percent" />
 
     <Button
-        android:id="@+id/button_cirkelns_area"
+        android:id="@+id/button_area_of_the_circle"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/cirkelns_area"
-        android:textSize="@dimen/Knappar"
+        android:text="@string/area_of_the_circle"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_roten_ur" />
+        app:layout_constraintTop_toBottomOf="@+id/button_square_root_of" />
 
     <Button
-        android:id="@+id/button_multiplikation"
+        android:id="@+id/button_multiplication"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/multiplikation"
-        android:textSize="@dimen/Knappar"
-        app:layout_constraintEnd_toStartOf="@+id/button_roten_ur"
+        android:text="@string/multiplication"
+        android:textSize="@dimen/button"
+        app:layout_constraintEnd_toStartOf="@+id/button_square_root_of"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_addition" />
@@ -159,12 +159,12 @@
     <Button
         android:id="@+id/button_addition"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/addition"
-        android:textSize="@dimen/Knappar"
-        app:layout_constraintEnd_toStartOf="@+id/button_subtraktion"
+        android:textSize="@dimen/button"
+        app:layout_constraintEnd_toStartOf="@+id/button_subtraction"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Input2" />
@@ -173,46 +173,46 @@
     <Button
         android:id="@+id/button_division"
         android:backgroundTint="@color/black"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/division"
-        android:textSize="@dimen/Knappar"
+        android:textSize="@dimen/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/button_subtraktion"
+        app:layout_constraintStart_toEndOf="@+id/button_subtraction"
         app:layout_constraintTop_toBottomOf="@+id/Input2" />
 
     <Button
         android:id="@+id/button_clear"
         android:backgroundTint="@color/red"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:text="@string/clear"
-        android:textSize="@dimen/Knappar"
+        android:textSize="@dimen/button"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Result" />
 
-    <!-- beskrivning av knapparna -->
+    <!-- description of buttons -->
 
     <TextView
         android:id="@+id/count_addition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Addition: x + y = z"
+        android:text="@string/addition_x_y_z"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_clear" />
 
     <TextView
-        android:id="@+id/count_subtraktion"
+        android:id="@+id/count_subtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Subtraktion: x - y = z"
+        android:text="@string/subtraction_x_y_z"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,77 +223,77 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Division: x / y = z"
+        android:text="@string/division_x_y_z"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_subtraktion" />
+        app:layout_constraintTop_toBottomOf="@+id/count_subtraction" />
 
     <TextView
-        android:id="@+id/count_multiplikation"
+        android:id="@+id/count_multiplication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Multiplikation: x * y = z"
+        android:text="@string/multiplication_x_y_z"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/count_division" />
 
     <TextView
-        android:id="@+id/count_roten_ur"
+        android:id="@+id/count_square_root_of"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Roten ur: x = z"
+        android:text="@string/square_root_of_x_z"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_multiplikation" />
+        app:layout_constraintTop_toBottomOf="@+id/count_multiplication" />
 
     <TextView
-        android:id="@+id/count_procent"
+        android:id="@+id/count_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Procent: (x / y) * 100 = z"
+        android:text="@string/percent_what_percent_is_x_of_y_z"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_roten_ur" />
+        app:layout_constraintTop_toBottomOf="@+id/count_square_root_of" />
 
     <TextView
-        android:id="@+id/count_pythagoras_sats"
+        android:id="@+id/count_pythagorean_theorem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Pythagoras sats: x (basen), y (höjden) = z "
+        android:text="@string/pythagorean_x_base_y_height_z_hypotenuse"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_procent" />
+        app:layout_constraintTop_toBottomOf="@+id/count_percent" />
 
     <TextView
-        android:id="@+id/count_cirkelns_area"
+        android:id="@+id/count_area_of_the_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Cirkelns area: x(radien) = z"
+        android:text="@string/area_of_the_circle_x_radius_z"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_pythagoras_sats" />
+        app:layout_constraintTop_toBottomOf="@+id/count_pythagorean_theorem" />
 
     <TextView
-        android:id="@+id/count_cylinderns_volym"
+        android:id="@+id/count_volume_of_the_cylinder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Cylinderns volym: x (radie), y (höjd) = z"
+        android:text="@string/volume_of_the_cylinder_x_radius_y_height_z"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_cirkelns_area" />
+        app:layout_constraintTop_toBottomOf="@+id/count_area_of_the_circle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

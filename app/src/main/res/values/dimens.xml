@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titel">24sp</dimen>
+    <dimen name="button">11sp</dimen>
+    <dimen name="header">24sp</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="header_calculator">24sp</dimen>
+</resources>

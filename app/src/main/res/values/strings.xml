@@ -3,15 +3,24 @@
     <string name="addition">Addition</string>
     <string name="first_input_x">First input x:</string>
     <string name="second_input_y">Second input y:</string>
-    <string name="pythagoras_sats">Pythagoras sats</string>
+    <string name="pythagorean_theorem">Pythagorean theorem</string>
     <string name="division">Division</string>
-    <string name="procent">Procent</string>
-    <string name="subtraktion">Subtraktion</string>
-    <string name="roten_ur">Roten ur</string>
-    <string name="cirkelns_area">Cirkelns area</string>
-    <string name="multiplikation">Multiplikation</string>
-    <string name="cylinderns_volym">Cylinderns volym</string>
+    <string name="percent">Percent</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="square_root_of">Square root of</string>
+    <string name="area_of_the_circle">Area of the circle</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="volume_of_the_cylinder">Volume of the cylinder</string>
     <string name="result_z">Result z:</string>
     <string name="calculator">CALCULATOR</string>
     <string name="clear">Clear</string>
+    <string name="volume_of_the_cylinder_x_radius_y_height_z">Volume of the cylinder: x (radius), y (height) = z</string>
+    <string name="area_of_the_circle_x_radius_z">Area of the Circle: x (radius) = z</string>
+    <string name="pythagorean_x_base_y_height_z_hypotenuse">Pythagorean: x (base), y (height) = z (hypotenuse)</string>
+    <string name="percent_what_percent_is_x_of_y_z">Percent: What percent is x of y = z</string>
+    <string name="square_root_of_x_z">Square root of: x = z</string>
+    <string name="multiplication_x_y_z">Multiplication: x * y = z</string>
+    <string name="division_x_y_z">Division: x / y = z</string>
+    <string name="subtraction_x_y_z">Subtraction: x - y = z</string>
+    <string name="addition_x_y_z">Addition: x + y = z</string>
 </resources>

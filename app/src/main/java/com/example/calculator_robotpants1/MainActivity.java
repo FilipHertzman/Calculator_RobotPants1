@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        //Lovisa subtraktion nn
+        //Lovisa subtraction
 
-        Button Btn_subtraktion = findViewById(R.id.button_subtraktion);
+        Button Btn_subtraktion = findViewById(R.id.button_subtraction);
         Btn_subtraktion.setOnClickListener(view -> {
 
             if (Input1.getText().toString().trim().length() <= 0) {
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
             }});
         //Rafat, multiplication
-        Button Btn_multiplication = findViewById(R.id.button_multiplikation);
+        Button Btn_multiplication = findViewById(R.id.button_multiplication);
         Btn_multiplication.setOnClickListener(view -> {
 
             if (Input1.getText().toString().trim().length() <= 0) {
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             }});
 
         //Rafat, Percent
-        Button Btn_Percent = findViewById(R.id.button_procent);
+        Button Btn_Percent = findViewById(R.id.button_percent);
         Btn_Percent.setOnClickListener(view -> {
             if (Input1.getText().toString().trim().length() <= 0) {
                 Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
@@ -162,8 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
-        //Filip Hertzman, roten ur
-        Button Btn_Roten_ur = findViewById(R.id.button_roten_ur);
+        //Filip Hertzman, square root of
+        Button Btn_Roten_ur = findViewById(R.id.button_square_root_of);
         Btn_Roten_ur.setOnClickListener(view -> {
 
             if (Input1.getText().toString().trim().length() <= 0) {
@@ -182,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
-        //Filip Hertzman, Pythagoras sats
-        Button Btn_Pythagoras_sats = findViewById(R.id.button_pythagoras_sats);
+        //Filip Hertzman, pythagorean theorem
+        Button Btn_Pythagoras_sats = findViewById(R.id.button_pythagorean_theorem);
         Btn_Pythagoras_sats.setOnClickListener(view -> {
 
             if (Input1.getText().toString().trim().length() <= 0) {
@@ -205,8 +205,7 @@ public class MainActivity extends AppCompatActivity {
             Result.setText(String.valueOf(sum_Sv));
 
             }});
-
-        // Filip Hertzman, Clear Button
+        // Filip Hertzman, clear button
         Button Button_clear = findViewById(R.id.button_clear);
        Button_clear.setOnClickListener(view -> {
            Input1.getText().clear();
