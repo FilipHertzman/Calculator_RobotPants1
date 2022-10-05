@@ -140,6 +140,16 @@ public class MainActivity extends AppCompatActivity {
         Button Btn_Pythagoras_sats = findViewById(R.id.button_pythagoras_sats);
         Btn_Pythagoras_sats.setOnClickListener(view -> {
 
+            if (Input1.getText().toString().trim().length() <= 0) {
+                Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
+            }
+
+            else if (Input2.getText().toString().trim().length()<=0) {
+                Toast.makeText(this, "Second input y: is empty", Toast.LENGTH_SHORT).show();
+            }
+
+            else {
+
             double N1 = Double.parseDouble((Input1.getText().toString()));
             double N2 = Double.parseDouble((Input2.getText().toString()));
 
@@ -148,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             double sum_Sv = Double.parseDouble((df.format(sum)));
             Result.setText(String.valueOf(sum_Sv));
 
-        });
+            }});
 
         // Filip Hertzman, Clear Button
         Button Button_clear = findViewById(R.id.button_clear);
