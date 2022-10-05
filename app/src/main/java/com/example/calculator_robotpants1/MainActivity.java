@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 double sum2 = sum * 100;
                 DecimalFormat df = new DecimalFormat("#.##");
                 double sum_Sv = Double.parseDouble((df.format(sum2)));
-                Result.setText(String.valueOf(sum_Sv));
+                Result.setText(String.valueOf(sum_Sv + "%"));
 
             }});
 
