@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Calculator_RobotPants1</string>
     <string name="addition">Addition</string>
+    <string name="first_input_x">First input x:</string>
+    <string name="second_input_y">Second input y:</string>
+    <string name="pythagoras_sats">Pythagoras sats</string>
+    <string name="division">Division</string>
+    <string name="procent">Procent</string>
+    <string name="subtraktion">Subtraktion</string>
+    <string name="roten_ur">Roten ur</string>
+    <string name="cirkelns_area">Cirkelns area</string>
+    <string name="multiplikation">Multiplikation</string>
+    <string name="cylinderns_volym">Cylinderns volym</string>
+    <string name="result_z">Result z:</string>
+    <string name="calculator">CALCULATOR</string>
 </resources>

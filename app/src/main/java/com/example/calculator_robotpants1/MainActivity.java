@@ -9,10 +9,17 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
+
+//Rafat
 public class MainActivity extends AppCompatActivity {
     private EditText Input1;
     private EditText Input2;
     private TextView Result;
+    Button button_clear;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Input1 = findViewById(R.id.Input1);
         Input2 = findViewById(R.id.Input2);
         Result = findViewById(R.id.Result);
+        button_clear = findViewById(R.id.button_clear);
         myButtonListenerMethod();
     }
-
 
 
     public void myButtonListenerMethod() {
@@ -34,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             double N2 = Double.parseDouble((Input2.getText().toString()));
 
             double sum = N1 + N2;
-            DecimalFormat df= new DecimalFormat("#.#");
-            double sum_Sv= Double.parseDouble((df.format(sum)));
+            DecimalFormat df = new DecimalFormat("#.#");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
             Result.setText(String.valueOf(sum_Sv));
         });
 
@@ -46,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
             double N2 = Double.parseDouble((Input2.getText().toString()));
 
             double sum = N1 * N2;
-            DecimalFormat df= new DecimalFormat("#.#");
-            double sum_Sv= Double.parseDouble((df.format(sum)));
+            DecimalFormat df = new DecimalFormat("#.#");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
             Result.setText(String.valueOf(sum_Sv));
 
         });
@@ -60,16 +67,64 @@ public class MainActivity extends AppCompatActivity {
             double N2 = Double.parseDouble((Input2.getText().toString()));
 
             double sum = N1 * N2;
-            double sum2= sum / 100;
-            DecimalFormat df= new DecimalFormat("#.##");
-            double sum_Sv= Double.parseDouble((df.format(sum2)));
+            double sum2 = sum / 100;
+            DecimalFormat df = new DecimalFormat("#.##");
+            double sum_Sv = Double.parseDouble((df.format(sum2)));
             Result.setText(String.valueOf(sum_Sv));
 
         });
+
+        //Filip Hertzman, roten ur
+        Button Btn_Roten_ur = findViewById(R.id.button_roten_ur);
+        Btn_Roten_ur.setOnClickListener(view -> {
+
+            double N1 = Double.parseDouble((Input1.getText().toString()));
+
+
+            double sum = Math.sqrt(N1);
+            DecimalFormat df = new DecimalFormat("#.#");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
+            Result.setText(String.valueOf(sum_Sv));
+
+        });
+
+        //Filip Hertzman, Pythagoras sats
+        Button Btn_Pythagoras_sats = findViewById(R.id.button_pythagoras_sats);
+        Btn_Pythagoras_sats.setOnClickListener(view -> {
+
+            double N1 = Double.parseDouble((Input1.getText().toString()));
+            double N2 = Double.parseDouble((Input2.getText().toString()));
+
+            double sum = (Math.sqrt(N1 * N1 + N2 * N2));
+            DecimalFormat df = new DecimalFormat("#.##");
+            double sum_Sv = Double.parseDouble((df.format(sum)));
+            Result.setText(String.valueOf(sum_Sv));
+
+        });
+
+        // Filip Hertzman, Clear Button
+        Button Button_clear = findViewById(R.id.button_clear);
+       Button_clear.setOnClickListener(view -> {
+           Input1.getText().clear();
+           Input2.getText().clear();
+
+
+       });
+
+
+
+
+
+
+
     }
-
-
-
 }
+
+
+
+
+
+
+
 
 

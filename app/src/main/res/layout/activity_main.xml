@@ -4,75 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/photo_1516541196182_6bdb0516ed27"
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/Input1"
-        android:hint="First input:"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"
+        android:text="@string/calculator"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Input1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/Input2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Second input:"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input1" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_addition"
+        android:id="@+id/button_roten_ur"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/addition"
+        android:layout_marginTop="8dp"
+        android:text="@string/roten_ur"
         android:textSize="11sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_subtraktion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_subtraktion" />
 
     <Button
         android:id="@+id/button_pythagoras_sats"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Pythagoras sats"
+        android:layout_marginTop="12dp"
+        android:text="@string/pythagoras_sats"
         android:textSize="11sp"
         app:layout_constraintEnd_toStartOf="@+id/button_cirkelns_area"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_multiplikation" />
 
     <Button
-        android:id="@+id/button_division"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Division"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/button_subtraktion"
-        app:layout_constraintTop_toBottomOf="@+id/Input2" />
-
-    <Button
         android:id="@+id/button_procent"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Procent"
+        android:layout_marginTop="8dp"
+        android:text="@string/procent"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -81,34 +62,63 @@
 
     <Button
         android:id="@+id/button_subtraktion"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Subtraktion"
+        android:text="@string/subtraktion"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Input2" />
 
+    <EditText
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/result_z"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_cirkelns_area" />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="@string/first_input_x"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/button_roten_ur"
+        android:id="@+id/button_cylinderns_volym"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Roten ur"
+        android:layout_marginTop="12dp"
+        android:text="@string/cylinderns_volym"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_subtraktion" />
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/button_cirkelns_area"
+        app:layout_constraintTop_toBottomOf="@+id/button_procent" />
 
     <Button
         android:id="@+id/button_cirkelns_area"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Cirkelns area"
+        android:layout_marginTop="12dp"
+        android:text="@string/cirkelns_area"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -117,44 +127,67 @@
 
     <Button
         android:id="@+id/button_multiplikation"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Multiplikation"
+        android:layout_marginTop="8dp"
+        android:text="@string/multiplikation"
         android:textSize="11sp"
         app:layout_constraintEnd_toStartOf="@+id/button_roten_ur"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_addition" />
 
-
     <Button
-        android:id="@+id/button_cylinderns_volym"
+        android:id="@+id/button_addition"
+        android:backgroundTint="@color/black"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Cylinderns volym"
+        android:layout_marginTop="48dp"
+        android:text="@string/addition"
         android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/button_cirkelns_area"
-        app:layout_constraintTop_toBottomOf="@+id/button_procent" />
+        app:layout_constraintEnd_toStartOf="@+id/button_subtraktion"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
 
     <EditText
-        android:id="@+id/Result"
+        android:id="@+id/Input2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
-        android:hint="Result:"
+        android:hint="@string/second_input_y"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_cirkelns_area" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hhej"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/Input1" />
+
+    <Button
+        android:id="@+id/button_division"
+        android:backgroundTint="@color/black"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/division"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/button_subtraktion"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:backgroundTint="@color/red"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Result" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
