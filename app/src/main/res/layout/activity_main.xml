@@ -7,7 +7,7 @@
     android:background="@drawable/photo_1516541196182_6bdb0516ed27"
     tools:context=".MainActivity">
 
-    //Layout - Filip Hertzman
+    <!-- Layout - Filip Hertzman -->
 
     <TextView
         android:id="@+id/textView"

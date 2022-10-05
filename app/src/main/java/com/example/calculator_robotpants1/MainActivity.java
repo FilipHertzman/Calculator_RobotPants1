@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +29,13 @@ public class MainActivity extends AppCompatActivity {
         Result = findViewById(R.id.Result);
         button_clear = findViewById(R.id.button_clear);
         myButtonListenerMethod();
+
     }
 
 
-    public void myButtonListenerMethod() {
 
+    public void myButtonListenerMethod() {
+        //Rafat, addition
         Button Btn_addition = findViewById(R.id.button_addition);
         Btn_addition.setOnClickListener(view -> {
 
@@ -68,30 +68,51 @@ public class MainActivity extends AppCompatActivity {
         Button Btn_subtraktion = findViewById(R.id.button_subtraktion);
         Btn_subtraktion.setOnClickListener(view -> {
 
-            double N1 = Double.parseDouble((Input1.getText().toString()));
-            double N2 = Double.parseDouble((Input2.getText().toString()));
+            if (Input1.getText().toString().trim().length() <= 0) {
+                Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
+            }
 
-            double sum = N1 - N2;
-            DecimalFormat df = new DecimalFormat("#.#");
-            double sum_Sv = Double.parseDouble((df.format(sum)));
-            Result.setText(String.valueOf(sum_Sv));
+            else if (Input2.getText().toString().trim().length()<=0) {
+                Toast.makeText(this, "Second input y: is empty", Toast.LENGTH_SHORT).show();
+            }
 
-        });
+
+            else {
+
+                double N1 = Double.parseDouble((Input1.getText().toString()));
+                double N2 = Double.parseDouble((Input2.getText().toString()));
+
+                double sum = N1 - N2;
+                DecimalFormat df = new DecimalFormat("#.#");
+                double sum_Sv = Double.parseDouble((df.format(sum)));
+                Result.setText(String.valueOf(sum_Sv));
+
+            }});
 
         //Lovisa division
         Button Btn_division = findViewById(R.id.button_division);
         Btn_division.setOnClickListener(view -> {
+            if (Input1.getText().toString().trim().length() <= 0) {
+                Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
+            }
 
-            double N1 = Double.parseDouble((Input1.getText().toString()));
-            double N2 = Double.parseDouble((Input2.getText().toString()));
+            else if (Input2.getText().toString().trim().length()<=0) {
+                Toast.makeText(this, "Second input y: is empty", Toast.LENGTH_SHORT).show();
+            }
 
-            double sum = N1 / N2;
-            DecimalFormat df = new DecimalFormat("#.#");
-            double sum_Sv = Double.parseDouble((df.format(sum)));
-            Result.setText(String.valueOf(sum_Sv));
 
-        });
+            else {
 
+                double N1 = Double.parseDouble((Input1.getText().toString()));
+                double N2 = Double.parseDouble((Input2.getText().toString()));
+
+                double sum = N1 / N2;
+                DecimalFormat df = new DecimalFormat("#.#");
+                double sum_Sv = Double.parseDouble((df.format(sum)));
+                Result.setText(String.valueOf(sum_Sv));
+
+            }});
+        //Rafat, multiplication
         Button Btn_multiplication = findViewById(R.id.button_multiplikation);
         Btn_multiplication.setOnClickListener(view -> {
 
@@ -116,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
-
+        //Rafat, Percent
         Button Btn_Percent = findViewById(R.id.button_procent);
         Btn_Percent.setOnClickListener(view -> {
             if (Input1.getText().toString().trim().length() <= 0) {
@@ -133,30 +154,26 @@ public class MainActivity extends AppCompatActivity {
                 double N1 = Double.parseDouble((Input1.getText().toString()));
                 double N2 = Double.parseDouble((Input2.getText().toString()));
 
-                double sum = N1 * N2;
-                double sum2 = sum / 100;
+                double sum = N1 / N2;
+                double sum2 = sum * 100;
                 DecimalFormat df = new DecimalFormat("#.##");
                 double sum_Sv = Double.parseDouble((df.format(sum2)));
-                Result.setText(String.valueOf(sum_Sv));
+                Result.setText(String.valueOf(sum_Sv + "%"));
 
             }});
 
         //Filip Hertzman, roten ur
         Button Btn_Roten_ur = findViewById(R.id.button_roten_ur);
         Btn_Roten_ur.setOnClickListener(view -> {
+
             if (Input1.getText().toString().trim().length() <= 0) {
                 Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
-            }
-
-            else if (Input2.getText().toString().trim().length()<=0) {
-                Toast.makeText(this, "Second input y: is empty", Toast.LENGTH_SHORT).show();
             }
 
 
             else {
 
                 double N1 = Double.parseDouble((Input1.getText().toString()));
-
 
                 double sum = Math.sqrt(N1);
                 DecimalFormat df = new DecimalFormat("#.#");
@@ -197,10 +214,6 @@ public class MainActivity extends AppCompatActivity {
 
 
        });
-
-
-
-
 
 
 
