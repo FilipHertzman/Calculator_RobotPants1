@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void myButtonListenerMethod() {
-
+        //Rafat, addition
         Button Btn_addition = findViewById(R.id.button_addition);
         Btn_addition.setOnClickListener(view -> {
 
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 Result.setText(String.valueOf(sum_Sv));
 
             }});
-
+        //Rafat, multiplication
         Button Btn_multiplication = findViewById(R.id.button_multiplikation);
         Btn_multiplication.setOnClickListener(view -> {
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
-
+        //Rafat, Percent
         Button Btn_Percent = findViewById(R.id.button_procent);
         Btn_Percent.setOnClickListener(view -> {
             if (Input1.getText().toString().trim().length() <= 0) {
