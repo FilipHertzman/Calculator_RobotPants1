@@ -65,10 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        //Lovisa subtraction
+        //Lovisa, subtraction
 
-        Button Btn_subtraktion = findViewById(R.id.button_subtraction);
-        Btn_subtraktion.setOnClickListener(view -> {
+        Button Btn_subtraction = findViewById(R.id.button_subtraction);
+        Btn_subtraction.setOnClickListener(view -> {
 
             if (Input1.getText().toString().trim().length() <= 0) {
                 Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
-        //Lovisa division
+        //Lovisa, division
         Button Btn_division = findViewById(R.id.button_division);
         Btn_division.setOnClickListener(view -> {
             if (Input1.getText().toString().trim().length() <= 0) {
