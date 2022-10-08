@@ -7,6 +7,8 @@
     android:background="@drawable/photo_1516541196182_6bdb0516ed27"
     tools:context=".MainActivity">
 
+    <!-- I gruppen: Lovisa, Filip, Rafat, Hamid -->
+
     <!-- Layout - Filip, Rafat -->
 
     <TextView
