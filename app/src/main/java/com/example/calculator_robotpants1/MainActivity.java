@@ -216,6 +216,48 @@ public class MainActivity extends AppCompatActivity {
 
        });
 
+        //Hamid circle area
+        Button areaofthecircle = findViewById(R.id.button_area_of_the_circle);
+        areaofthecircle.setOnClickListener(view -> {
+
+            if (Input1.getText().toString().trim().length() <= 0) {
+                Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
+            }
+
+
+            else {
+
+                double radius = Double.parseDouble((Input1.getText().toString()));
+
+
+                double sum = Math.PI*radius*radius;
+                DecimalFormat df = new DecimalFormat("#.#");
+                double sum_Sv = Double.parseDouble((df.format(sum)));
+                Result.setText(String.valueOf(sum_Sv));
+
+            }});
+
+        //Hamid cyliner volym
+        Button cylindervolume = findViewById(R.id.button_volume_of_the_cylinder);
+       cylindervolume.setOnClickListener(view -> {
+
+            if (Input1.getText().toString().trim().length() <= 0) {
+                Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
+            }
+
+
+            else {
+
+                double radius = Double.parseDouble((Input1.getText().toString()));
+                double height = Double.parseDouble((Input1.getText().toString()));
+
+                double sum = Math.PI*radius*radius*height;
+                DecimalFormat df = new DecimalFormat("#.#");
+                double sum_Sv = Double.parseDouble((df.format(sum)));
+                Result.setText(String.valueOf(sum_Sv));
+
+            }});
+
 
 
     }
