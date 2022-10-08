@@ -36,6 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_area_of_the_circle" />
 
+
     <!-- Input -->
     <EditText
         android:id="@+id/Input1"

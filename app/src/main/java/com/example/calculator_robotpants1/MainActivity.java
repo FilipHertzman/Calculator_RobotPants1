@@ -245,11 +245,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "First input x: is empty", Toast.LENGTH_SHORT).show();
             }
 
+            else if (Input2.getText().toString().trim().length()<=0) {
+                Toast.makeText(this, "Second input y: is empty", Toast.LENGTH_SHORT).show();
+            }
+
 
             else {
 
                 double radius = Double.parseDouble((Input1.getText().toString()));
-                double height = Double.parseDouble((Input1.getText().toString()));
+                double height = Double.parseDouble((Input2.getText().toString()));
 
                 double sum = Math.PI*radius*radius*height;
                 DecimalFormat df = new DecimalFormat("#.#");
